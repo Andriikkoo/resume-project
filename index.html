@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,108 +7,56 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            margin: 20px;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .photo {
             text-align: center;
+            margin-bottom: 20px;
         }
-        nav {
-            background: #444;
-            padding: 1rem;
-            text-align: center;
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
+        .contact {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin-right: 10px;
             text-decoration: none;
+            color: #0066cc;
         }
-        section {
-            padding: 2rem;
-            background: #fff;
-            margin: 1rem;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        footer nav a {
-            margin: 0.5rem 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Візитівка Фронтенд-Розробника</h1>
-</header>
-
-<nav>
-    <a href="#about">Про мене</a>
-    <a href="#experience">Досвід</a>
-    <a href="#interests">Інтереси</a>
-    <a href="#contacts">Контакти</a>
-</nav>
-
-<section id="about">
-    <h2>Про мене</h2>
-    <p>Вітаю! Я — Андрій, талановитий фронтенд-розробник із пристрастю до створення красивих та функціональних веб-додатків.</p>
-    <img src="ava.jpg" alt="Моє фото">
-</section>
-
-<section id="experience">
-    <h2>Досвід</h2>
-    <article>
-        <h3>Webflow-Розробник у Компанії Malevich</h3>
-        <p>Верстка та підтримка користувацьких інтерфейсів для веб-додатків за допомогою HTML, CSS та JavaScript.</p>
-    </article>
-    <article>
-        <h3>Веб-дизайнер та  у Monk Team</h3>
-        <p>Допомагав у дизайні та розробці у різних проектах, з використанням таких інструментів як Figma та Webflow</p>
-    </article>
-</section>
-
-<section id="interests">
-    <h2>Інтереси</h2>
-    <p>Я цікавлюсь сучасними веб-технологіями, такими як React, Vue, та Angular. Постійно вивчаю нові підходи та інструменти для підвищення ефективності своєї роботи.</p>
-</section>
-
-<section id="contacts">
-    <h2>Контакти</h2>
-    <p>Зв'яжіться зі мною через GitHub: <a href="https://github.com/Andriikkoo" target="_blank">Мій GitHub</a></p>
-</section>
-
-<footer>
-    <nav>
-        <a href="#about">Про мене</a>
-        <a href="#experience">Досвід</a>
-        <a href="#interests">Інтереси</a>
-        <a href="#contacts">Контакти</a>
-    </nav>
-   
-</footer>
-
+    <div class="container">
+        <header>
+            <div class="photo">
+                <img src="photo.jpg" alt="Ваше фото">
+            </div>
+            <h1>Андрій Холопов</h1>
+            <p>Веб-розробник</p>
+        </header>
+        <section class="about">
+            <h2>Про мене</h2>
+            <p>Я починаючий веб-розробник з великим бажанням навчатися та вдосконалювати свої навички. Цікавлюсь фронтенд-розробкою та маю базові знання HTML, CSS та JavaScript.</p>
+        </section>
+        <section class="contact">
+            <h2>Контакти</h2>
+            <p>Email: <a href="mailto:kholopovandrey@gmail.com">kholopovandrey@gmail.com</a></p>
+            <div class="social-links">
+                <h3>Соціальні мережі</h3>
+                <a href="https://www.linkedin.com/in/andrii-kholopov-1661661ba/" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/profile.php?id=100015009279174&locale=uk_UA" target="_blank">Facebook</a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
